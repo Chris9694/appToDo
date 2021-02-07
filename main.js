@@ -11,8 +11,7 @@ function create(){
     
   var title = document.createElement("h1");
   title.setAttribute("id","Title");
-  var titleContent = document.createTextNode("To Do List");
-  title.appendChild(titleContent); //añade texto al h1 creado.
+  title.textContent = "To Do List";
   document.body.insertBefore(title, app);
 
   var inputField = document.createElement("input");
@@ -22,8 +21,7 @@ function create(){
 
   var addToDoButton = document.createElement("button");
   addToDoButton.setAttribute("id","addToDo");
-  var buttonContent = document.createTextNode("AGREGAR");
-  addToDoButton.appendChild(buttonContent);
+  addToDoButton.textContent = 'AGREGAR';
   app.insertBefore(addToDoButton, toDoContainer);
 
   
